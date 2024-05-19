@@ -28,12 +28,17 @@ header {
     font-weight: bold;
     gap: 8px;
     cursor: default;
+
+
 }
 
+
 .logo .material-symbols-outlined {
-    font-size: 1.9rem;
+    font-size: 2.4rem;
+    color: #ff8e2d;
 }
-.searchAndLoc{
+
+.searchAndLoc {
     display: flex;
     width: 65%;
     justify-content: space-between;
@@ -316,7 +321,7 @@ header {
     font-size: 0.9rem;
 }
 
-.sunair{
+.sunair {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
