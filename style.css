@@ -33,6 +33,12 @@ header {
 .logo .material-symbols-outlined {
     font-size: 1.9rem;
 }
+.searchAndLoc{
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .searchBar {
     display: flex;
