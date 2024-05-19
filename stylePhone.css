@@ -43,16 +43,20 @@
     }
 
     .highlightsIndex .material-symbols-outlined {
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 
     .highlightsIndexValue {
         font-size: 1.1rem;
+        font-weight: bold;
     }
 
     .airQualityIndex,
     .sun {
         width: 100%;
+    }
+    .allHighlights{
+        gap: 0px;
     }
 
     .otherHighlights {
@@ -78,17 +82,14 @@
     }
 
     .dailyData span {
-        font-size: 1.2rem;
+        font-size: 1rem;
 
     }
 
     .hourlyData{
         padding: 15px;
     }
-    .hourlyData span {
-        font-size: 1.05rem;
-        
-    }
+    
 
     .todaysHighlights{
         padding: 10px;
@@ -100,6 +101,8 @@
 
     .airQuality{
         padding: 2px;
+        padding-right: 15px;
+    padding-left: 15px;
     }
 
 
