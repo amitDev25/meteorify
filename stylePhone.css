@@ -12,25 +12,22 @@
         font-size: 1.6rem;
     }
 
+    body{
+        padding: 15px;
+    }
+
 
     .mainBody {
         flex-direction: column;
     }
 
-    #currentWeatherIcon {
-        width: 150px;
-        height: 150px;
-    }
-
+    
     #currentTemp {
         gap: 0px;
         justify-content: space-between;
     }
 
-    #currentTemp span {
-        font-size: 4rem;
-    }
-
+   
 
     .leftSide {
         width: 100%;
@@ -91,6 +88,18 @@
     .hourlyData span {
         font-size: 1.05rem;
         
+    }
+
+    .todaysHighlights{
+        padding: 10px;
+    }
+
+    .highlightsChild{
+        padding: 20px;
+    }
+
+    .airQuality{
+        padding: 2px;
     }
 
 
