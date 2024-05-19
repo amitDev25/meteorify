@@ -1,5 +1,11 @@
 @media only screen and (max-width:1300px) {
 
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
     .logo {
 
         font-size: 1.5rem;
@@ -14,6 +20,18 @@
 
     body{
         padding: 15px;
+    }
+    .searchAndLoc{
+        width: 100%;
+    }
+
+    .searchBar input{
+        width: 60vw;
+    }
+    .currentLocation button {     
+        padding: 9px;
+        border-radius: 50%;
+        
     }
 
 
@@ -96,7 +114,7 @@
     }
 
     .highlightsChild{
-        padding: 20px;
+        padding: 15px;
     }
 
     .airQuality{
