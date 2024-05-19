@@ -35,20 +35,25 @@
 
         </div>
 
-        <div class="searchBar">
-            <input type="text" id="searchCity" placeholder="Enter City Name">
-            <div class="material-symbols-outlined searchIcon">
-                search
+        <div class="searchAndLoc">
+            <div class="searchBar">
+                <input type="text" id="searchCity" placeholder="Enter City Name">
+                <div class="material-symbols-outlined searchIcon">
+                    search
+                </div>
+    
+            </div>
+    
+            <div class="currentLocation">
+                <button class="currentLocationBtn" onclick="getCurrentLocation()"><span class="material-symbols-outlined">
+                        my_location
+                    </span><span class="currentLocationText">Current Location</span></button>
+    
             </div>
 
         </div>
 
-        <div class="currentLocation">
-            <button class="currentLocationBtn" onclick="getCurrentLocation()"><span class="material-symbols-outlined">
-                    my_location
-                </span><span class="currentLocationText">Current Location</span></button>
-
-        </div>
+        
     </header>
 
     <div class="mainBody">
