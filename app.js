@@ -55,7 +55,7 @@ const apikey = "d78fda6fd8107f61d9c9cc1e03511825";
 
         function weatherReport(data) {
 
-            var urlcast = `http://api.openweathermap.org/data/2.5/forecast?q=${data.name}&appid=${apikey}`;
+            var urlcast = `https://api.openweathermap.org/data/2.5/forecast?q=${data.name}&appid=${apikey}`;
 
             fetch(urlcast).then((res) => {
                 return res.json();
@@ -179,7 +179,7 @@ const apikey = "d78fda6fd8107f61d9c9cc1e03511825";
         function airQuality(airdata) {
             let lon = airdata.coord.lon;
             let lat = airdata.coord.lat;
-            const airurl = `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apikey}`;
+            const airurl = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apikey}`;
 
             fetch(airurl).then((res) => {
                 return res.json();
