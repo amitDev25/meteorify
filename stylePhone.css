@@ -1,0 +1,98 @@
+@media only screen and (max-width:1300px) {
+
+    .logo {
+
+        font-size: 1.5rem;
+
+        /* gap: 8px; */
+
+    }
+
+    .logo .material-symbols-outlined {
+        font-size: 1.6rem;
+    }
+
+
+    .mainBody {
+        flex-direction: column;
+    }
+
+    #currentWeatherIcon {
+        width: 150px;
+        height: 150px;
+    }
+
+    #currentTemp {
+        gap: 0px;
+        justify-content: space-between;
+    }
+
+    #currentTemp span {
+        font-size: 4rem;
+    }
+
+
+    .leftSide {
+        width: 100%;
+    }
+
+    .currentLocationText {
+        display: none;
+    }
+
+    .rightSide {
+        width: 100%;
+
+    }
+
+    .highlightsIndex .material-symbols-outlined {
+        font-size: 1.4rem;
+    }
+
+    .highlightsIndexValue {
+        font-size: 1.1rem;
+    }
+
+    .airQualityIndex,
+    .sun {
+        width: 100%;
+    }
+
+    .otherHighlights {
+        gap: 15px;
+
+    }
+
+    #now {
+        font-size: 1.4rem;
+    }
+
+    #clouds {
+        font-size: 1.2rem;
+    }
+
+    .dateLoc .material-symbols-outlined {
+        font-size: 1.6rem;
+    }
+
+    .dateLoc span {
+        font-size: 1.1em;
+
+    }
+
+    .dailyData span {
+        font-size: 1.2rem;
+
+    }
+
+    .hourlyData{
+        padding: 15px;
+    }
+    .hourlyData span {
+        font-size: 1.05rem;
+        
+    }
+
+
+
+}

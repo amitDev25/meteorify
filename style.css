@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    color: white;
+
+}
+
+body {
+    background-color: #080808;
+    padding: 25px;
+
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    gap: 8px;
+    cursor: default;
+}
+
+.logo .material-symbols-outlined {
+    font-size: 1.9rem;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchBar input {
+    width: 25vw;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #1d1b1b;
+    border: none;
+    font-size: 1.1rem;
+    padding: 20px;
+
+
+}
+
+.searchBar input::placeholder {
+    font-size: 1.1rem;
+    color: rgb(164, 164, 164);
+    /* padding: 10px; */
+
+}
+
+.searchBar .material-symbols-outlined {
+    font-size: 1.8rem;
+    /* font-weight: bold; */
+    cursor: pointer;
+    background-color: #1d1b1b;
+    padding: 8px;
+    border-radius: 50%;
+
+}
+
+.searchBar .material-symbols-outlined:hover {
+    background-color: #303030;
+
+}
+
+.currentLocation button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #a675c9;
+    border: none;
+}
+
+.currentLocation button span {
+    color: black;
+    font-weight: bold;
+
+}
+
+.currentLocation button:hover {
+    background-color: #895ea7;
+    cursor: pointer;
+
+}
+
+.mainBody {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    cursor: default;
+    margin-top: 40px;
+
+
+}
+
+.leftSide {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.currentWeather {
+    width: 100%;
+    padding: 20px;
+    background-color: #1d1b1b;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    /* align-items: center; */
+}
+
+#now {
+    font-size: 1.3rem;
+    color: rgb(205, 205, 205);
+}
+
+#currentTemp {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 40px;
+}
+
+#currentTemp span {
+    font-size: 3rem;
+}
+
+#clouds {
+    color: rgb(213, 213, 213);
+    text-transform: capitalize;
+}
+
+.dateLoc {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dateLoc .material-symbols-outlined {
+    color: rgb(213, 213, 213);
+    font-size: 1.5rem;
+
+}
+
+.dateLoc span {
+    font-size: 1rem;
+    color: #99959c;
+}
+
+.dailyForecast {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #1d1b1b;
+    border-radius: 25px;
+
+}
+
+.dailyData {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.dailyData span {
+    font-size: 0.9rem;
+    color: rgb(211, 205, 205);
+}
+
+.dailyData .dailyIcon img {
+    width: 52px;
+    height: 52px;
+}
+
+.rightSide {
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 20px;
+    /* margin-top: 40px; */
+
+}
+
+.hourlyForecast {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    overflow-y: scroll;
+}
+
+.hourlyForecast::-webkit-scrollbar {
+    display: none;
+
+}
+
+.hourlyData {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1b1b;
+    border-radius: 20px;
+    /* gap: 5px; */
+}
+
+.hourlyData span {
+    font-size: 0.9rem;
+    color: rgb(211, 205, 205);
+
+}
+
+.hourlyData .hourlyIcon img {
+    height: 80px;
+    width: 80px;
+}
+
+.todaysHighlights {
+    width: 100%;
+    background-color: #1d1b1b;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.todayHighlights2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.highlightsChild {
+    padding: 30px;
+    background-color: #0f0f0f;
+    width: fit-content;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.allHighlights {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.otherHighlights {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: center;
+}
+
+.airIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.highlightsTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.highlightsIndex .material-symbols-outlined {
+    font-size: 3rem;
+}
+
+.highlightsIndexValue {
+    font-size: 2rem;
+}
+
+.titleColor {
+    color: rgb(210, 210, 210);
+    font-size: 0.9rem;
+}
+
+.sunair{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+
+}
+
+
+.airQuality {
+    padding: 5px;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* border: 2px solid rgb(210, 210, 210); */
+    border-radius: 20px;
+    background-color: green;
+    color: black;
+    font-weight: bold;
+}
+
+.sunIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 10px;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
