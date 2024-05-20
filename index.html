@@ -17,13 +17,13 @@
     <link rel="icon" type="image" href="logo.png">
 
 
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" media="screen and (max-width: 1300px)" href="stylePhone.css">
 
 
 
     <style>
-        
+
     </style>
 </head>
 
@@ -40,23 +40,47 @@
 
         <div class="searchAndLoc">
             <div class="searchBar">
-                <input type="text" id="searchCity" placeholder="Enter City Name">
+                <div class="inputResult">
+                    <input type="text" id="searchCity" placeholder="Enter City Name" autocomplete="off">
+
+                    <div class="allInputs">
+
+                        <div class="searchCityResults">
+
+                            <span class="material-symbols-outlined locationIcon">location_on</span>
+                            <div class="searchAllCity">
+                                <p class="placeName">Kolkata</p>
+                                <p class="stateCountry">West Bengal, IN</p>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
                 <div class="material-symbols-outlined searchIcon">
                     search
                 </div>
-    
+
+
+
             </div>
-    
+
             <div class="currentLocation">
-                <button class="currentLocationBtn" onclick="getCurrentLocation()"><span class="material-symbols-outlined">
+                <button class="currentLocationBtn" onclick="getCurrentLocation()"><span
+                        class="material-symbols-outlined">
                         my_location
                     </span><span class="currentLocationText">Current Location</span></button>
-    
+
             </div>
 
         </div>
 
-        
+
     </header>
 
     <div class="mainBody">
@@ -205,60 +229,60 @@
                                 <div class="highlightsIndex airIndex">
                                     <span class="material-symbols-outlined">air</span>
                                 </div>
-    
+
                                 <div class="airIndex">
                                     <p class="indexTitle titleColor">PM2.5</p>
                                     <p class="highlightsIndexValue" id="PM25">53.90</p>
                                 </div>
-    
+
                                 <div class="airIndex">
                                     <p class="indexTitle titleColor">SO<sub class="titleColor">2</sub></p>
                                     <p class="highlightsIndexValue" id="SO2">53.90</p>
                                 </div>
-    
+
                                 <div class="airIndex">
                                     <p class="indexTitle titleColor">NO<sub class="titleColor">2</sub></p>
                                     <p class="highlightsIndexValue" id="NO2">53.90</p>
                                 </div>
-    
+
                                 <div class="airIndex">
                                     <p class="indexTitle titleColor">O<sub class="titleColor">3</sub></p>
                                     <p class="highlightsIndexValue" id="O3">53.90</p>
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="sun highlightsChild">
                             <p class="highlightsTitle"><span class="titleColor">Sunrise & Sunset</span></p>
                             <div class="allHighlights">
-    
+
                                 <div class="highlightsIndex sunIndex">
                                     <span class="material-symbols-outlined">sunny</span>
                                 </div>
-    
+
                                 <div class="sunIndex">
                                     <p class="indexTitle titleColor">Sunrise</p>
                                     <p class="highlightsIndexValue" id="sunrise">6:39 AM</p>
                                 </div>
-    
+
                                 <div class="highlightsIndex sunIndex">
                                     <span class="material-symbols-outlined">clear_night</span>
                                 </div>
-    
+
                                 <div class="sunIndex">
                                     <p class="indexTitle titleColor">Sunset</p>
                                     <p class="highlightsIndexValue" id="sunset">5:49 PM</p>
                                 </div>
-    
+
                             </div>
-    
+
                         </div>
 
 
 
                     </div>
 
-                    
+
 
                     <div class="highlightsChild">
                         <p class="highlightsTitle"><span class="titleColor">Humidity</span></p>
