@@ -71,6 +71,20 @@
         font-weight: bold;
     }
 
+    .lowerOther{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .highlightsChildLower{
+        width: 45%;
+    }
+
     .airQualityIndex,
     .sun {
         width: 100%;
