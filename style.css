@@ -17,7 +17,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .logo {
@@ -42,13 +42,13 @@ header {
     display: flex;
     width: 65%;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .searchBar {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
 }
 
@@ -64,6 +64,11 @@ header {
 
 }
 
+.searchBar input:focus {
+    outline: none;
+}
+
+
 .searchBar input::placeholder {
     font-size: 1.1rem;
     color: rgb(164, 164, 164);
@@ -71,7 +76,7 @@ header {
 
 }
 
-.searchBar .material-symbols-outlined {
+.searchIcon {
     font-size: 1.8rem;
     /* font-weight: bold; */
     cursor: pointer;
@@ -81,8 +86,61 @@ header {
 
 }
 
-.searchBar .material-symbols-outlined:hover {
+.searchIcon:hover {
     background-color: #303030;
+
+}
+
+.locationIcon {
+    font-size: 1.4rem;
+    padding-left: 8px;
+
+}
+
+
+.inputResult {
+    display: flex;
+    flex-direction: column;
+    background-color: #1d1b1b;
+    border-radius: 20px;
+
+
+
+}
+
+.searchCityResults {
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    z-index: 10;
+
+}
+
+.searchCityResults:hover {
+    background-color: #333232;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.searchAllCity {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.placeName {
+    color: #d4d4d4;
+    font-size: 1rem;
+    text-transform: capitalize;
+
+}
+
+.stateCountry {
+    color: #737373;
+    font-size: 0.8rem;
+    text-transform: capitalize;
 
 }
 
@@ -107,6 +165,12 @@ header {
     background-color: #895ea7;
     cursor: pointer;
 
+}
+
+.allInputs {
+    display: flex;
+    flex-direction: column;
+    display: none;
 }
 
 .mainBody {
