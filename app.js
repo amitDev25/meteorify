@@ -32,9 +32,9 @@ document.getElementById("searchCity").onkeyup = function () {
     const url = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=5&appid=${apikey}`;
 
     fetch(url).then((res) => {
-        if (!res.ok) {
-            alert("Enter Valid City Name");
-        }
+        // if (!res.ok) {
+        //     alert("Enter Valid City Name");
+        // }
         return res.json();
     }).then((data) => {
         // console.log(data); 
